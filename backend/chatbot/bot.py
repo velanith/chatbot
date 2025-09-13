@@ -40,27 +40,34 @@ def query_chatbot(messages):
     except ValueError as e:
         raise Exception(f"Invalid JSON response: {response.text}")
 
+# Chat history global variable
 chat_history = []
 
-while True:
-    user_input = input(">>User: ")
-    
-    # Add user message to chat history
-    chat_history.append({"role": "user", "content": user_input})
-    
-    try:
-        output = query_chatbot(chat_history)
-        print(f"Raw output: {output}")
+# Main function for terminal usage
+def main():
+    while True:
+        user_input = input(">>User: ")
         
-        if "choices" in output and len(output["choices"]) > 0:
-            bot_response = output["choices"][0]["message"]["content"]
-        else:
-            bot_response = "No response"
+        # Add user message to chat history
+        chat_history.append({"role": "user", "content": user_input})
+        
+        try:
+            output = query_chatbot(chat_history)
+            print(f"Raw output: {output}")
             
-        print(f"GPT-OSS: {bot_response}")
-        
-        # Add bot response to chat history
-        chat_history.append({"role": "assistant", "content": bot_response})
-        
-    except Exception as e:
-        print(f"Error: {e}")
+            if "choices" in output and len(output["choices"]) > 0:
+                bot_response = output["choices"][0]["message"]["content"]
+            else:
+                bot_response = "No response"
+                
+            print(f"GPT-OSS: {bot_response}")
+            
+            # Add bot response to chat history
+            chat_history.append({"role": "assistant", "content": bot_response})
+            
+        except Exception as e:
+            print(f"Error: {e}")
+
+# Only run main if this file is executed directly
+if __name__ == "__main__":
+    main()

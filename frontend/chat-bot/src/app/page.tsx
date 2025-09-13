@@ -18,19 +18,40 @@ export default function Home() {
     }
   }, [theme]);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!inputValue.trim()) return;
 
     const userMessage: Message = { text: inputValue, sender: 'user' };
     setMessages((prev) => [...prev, userMessage]);
+    const currentInput = inputValue;
     setInputValue('');
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botMessage: Message = { text: "That's a great goal! What would you like to write about?", sender: 'bot' };
+    try {
+      const response = await fetch('http://localhost:8000/api/v1/chat/simple', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: currentInput }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const botMessage: Message = { text: data.response, sender: 'bot' };
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error('Error:', error);
+      // Hata durumunda varsayılan mesaj
+      const errorMessage: Message = { 
+        text: "Sorry, I couldn't process your request. Please try again.", 
+        sender: 'bot' 
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    }
   };
 
   return (
