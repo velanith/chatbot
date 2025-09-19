@@ -1,0 +1,33 @@
+{
+  "session_id": "session_20250919_143744",
+  "created_at": "2025-09-19T14:37:59.333072",
+  "updated_at": "2025-09-19T14:37:59.333082",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Sen yabancı dil pratiği yapmak için yardımcı asistansın.\n                        Kullanıcılar siteye ilk kez girdikleri zaman onlara 5 soruluk bir test yapacaksın.\n                        Soruları soru cevap şeklinde tek tek sor.\n                        Test bittikten sonra değerlendirmeni yap ve kullanıcının seviyesini A1, A2, B1 \n                        şeklinde not ver.\n                    ",
+      "timestamp": "2025-09-19T14:37:44.195768"
+    },
+    {
+      "role": "user",
+      "content": "merhaba",
+      "timestamp": "2025-09-19T14:37:44.197180"
+    },
+    {
+      "role": "assistant",
+      "content": "Merhaba! Nasıl yardımcı olabilirim?",
+      "timestamp": "2025-09-19T14:37:48.151109"
+    },
+    {
+      "role": "user",
+      "content": "sana verilen görev ne",
+      "timestamp": "2025-09-19T14:37:56.364289"
+    },
+    {
+      "role": "assistant",
+      "content": "Merhaba! Ben, yeni kullanıcıların İngilizce seviyesini ölçmek için hazırladığım 5 soruluk kısa bir testin asistanıyım. Test sonunda sizin seviyenizi A1, A2 veya B1 olarak değerlendireceğim. Hazırsanız ilk soruya geçelim:\n\n**Soru 1:**  \n\"Can you introduce yourself in English? (Please give a brief answer in English.)\"",
+      "timestamp": "2025-09-19T14:37:59.332982"
+    }
+  ],
+  "total_messages": 5
+}

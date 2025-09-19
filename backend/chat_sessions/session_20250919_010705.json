@@ -1,0 +1,18 @@
+{
+  "session_id": "session_20250919_010705",
+  "created_at": "2025-09-19T01:07:06.192067",
+  "updated_at": "2025-09-19T01:07:06.192070",
+  "messages": [
+    {
+      "role": "user",
+      "content": "merhaba",
+      "timestamp": "2025-09-19T01:07:05.257295"
+    },
+    {
+      "role": "assistant",
+      "content": "Merhaba! Size nasıl yardımcı olabilirim?",
+      "timestamp": "2025-09-19T01:07:06.192049"
+    }
+  ],
+  "total_messages": 2
+}

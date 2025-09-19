@@ -1,0 +1,18 @@
+{
+  "session_id": "session_20250918_231511",
+  "created_at": "2025-09-18T23:15:13.361444",
+  "updated_at": "2025-09-18T23:15:13.361447",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ben bu ana kadar sana neler yazdım",
+      "timestamp": "2025-09-18T23:15:11.623707"
+    },
+    {
+      "role": "assistant",
+      "content": "Benimle yapılan önceki konuşmalarınız yok; bu mesajınız yalnızca bu sohbetin ilk mesajı. Dolayısıyla şu ana kadar bana hiçbir şey yazmadınız. Eğer önceki bir sohbetin özetini isterseniz, lütfen o sohbetin metnini paylaşın, ardından size yardımcı olabilirim.",
+      "timestamp": "2025-09-18T23:15:13.361425"
+    }
+  ],
+  "total_messages": 2
+}

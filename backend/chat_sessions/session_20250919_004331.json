@@ -1,0 +1,38 @@
+{
+  "session_id": "session_20250919_004331",
+  "created_at": "2025-09-19T00:44:08.485408",
+  "updated_at": "2025-09-19T00:44:08.485413",
+  "messages": [
+    {
+      "role": "user",
+      "content": "merhaba",
+      "timestamp": "2025-09-19T00:43:31.469350"
+    },
+    {
+      "role": "assistant",
+      "content": "Merhaba! Size nasıl yardımcı olabilirim?",
+      "timestamp": "2025-09-19T00:43:35.683432"
+    },
+    {
+      "role": "user",
+      "content": "sana bir önceki cümlede ne yazdım",
+      "timestamp": "2025-09-19T00:43:51.687428"
+    },
+    {
+      "role": "assistant",
+      "content": "Merhaba.",
+      "timestamp": "2025-09-19T00:43:56.441670"
+    },
+    {
+      "role": "user",
+      "content": "toplam kaç mesaj attım",
+      "timestamp": "2025-09-19T00:44:05.487653"
+    },
+    {
+      "role": "assistant",
+      "content": "Toplam 3 mesaj attınız.",
+      "timestamp": "2025-09-19T00:44:08.485382"
+    }
+  ],
+  "total_messages": 6
+}
